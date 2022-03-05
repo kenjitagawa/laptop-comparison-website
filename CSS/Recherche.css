@@ -74,8 +74,9 @@ main {
         display:flex;
         position: relative;
         flex-direction: column;
-        height: 350px;
+        height: 380px;
         min-width: 250px;
+        max-width: 500px;
         padding: 1.5rem;
         border-bottom-right-radius: 16px;
         border-top-left-radius: 16px;
@@ -85,7 +86,10 @@ main {
         transition: 0.3s;
         margin: 0 .5rem;
     }
-    
+
+    .img-card {
+        background-repeat: no-repeat;
+    }
     
     .card:hover {
         transform: translateY(-1rem);

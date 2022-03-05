@@ -190,6 +190,20 @@ div > h4 {
     height: 100vh;
 }
 
+ 
+@media only screen and (min-width: 992px) {
+    .helloWorld > h1{
+        font-size: 100px;
+    }
+}
+
+ 
+    .helloWorld > h1{
+        font-size: 70px;
+    }
+
+
+
 .helloWorld {
     text-align: center;
     position: relative;
@@ -202,9 +216,7 @@ div > h4 {
     font-size: 2em;
 }
 
-.helloWorld > h1{
-    font-size: 100px;
-}
+
 
 .helloWorld > *{
     text-transform: uppercase;
@@ -231,8 +243,6 @@ div > h4 {
     background-color: transparent;
 }
 
-
- 
 
 
 
