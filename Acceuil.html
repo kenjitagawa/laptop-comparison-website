@@ -33,7 +33,7 @@
     <!--
         Header
     -->
-    <nav class="navbar navbar-expand-md red">
+    <nav class="navbar navbar-expand-md navbar-light red">
         <a class="navbar-brand" href="#">
             <span class="logo nav-items helloWorld">KT</span>
             <span class="material-icons-outlined material-icons code logo nav-items">
@@ -43,13 +43,12 @@
         </a>
 
         <!-- Hamburger menu -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav justify-content-center ml-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active nav-list-items">
 
                     <a class="nav-link" href="#">
@@ -65,13 +64,13 @@
                         <span class="nav-items nav-items-text">Recherche</span>
 
                     </a>
-                <li class="nav-item nav-list-items">
-                    <a class="nav-link" href="#">
-                        <i class="nav-icons fa-solid fa-star nav-items"></i>
-                        <span class="nav-items nav-items-text">Favorites</span>
+                    <li class="nav-item nav-list-items">
+                        <a class="nav-link" href="#">
+                            <i class="nav-icons fa-solid fa-star nav-items"></i>
+                            <span class="nav-items nav-items-text">Favorites</span>
 
-                    </a>
-                </li>
+                        </a>
+                    </li>
             </ul>
         </div>
     </nav>
@@ -99,14 +98,18 @@
                     <li>Something</li>
                     <li>Something</li>
                 </ul>
-                <p class="content-info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam laboriosam debitis
-                    expedita natus blanditiis magni quam illo, nesciunt earum quibusdam sequi modi, animi ea ratione aut
-                    repudiandae corporis quae?
-                    Tenetur ab veniam officia, placeat nulla eius voluptatum ratione perspiciatis fugiat dignissimos
-                    voluptatibus delectus ex sapiente ipsa, nostrum excepturi pariatur in eligendi optio quae vitae
-                    earum iste obcaecati. Voluptatem, inventore.
-                </p>
+
+                <div class="text-center">
+                    <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#card1" aria-expanded="false" aria-controls="card1">
+                            Button with data-target
+                    </button>
+                    <div class="collapse" id="card1">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12 justify-content-center content">
@@ -117,17 +120,20 @@
                     <li>Something</li>
                     <li>Something</li>
                 </ul>
-                <p class="content-info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam laboriosam debitis
-                    expedita natus blanditiis magni quam illo, nesciunt earum quibusdam sequi modi, animi ea ratione aut
-                    repudiandae corporis quae?
-                    Tenetur ab veniam officia, placeat nulla eius voluptatum ratione perspiciatis fugiat dignissimos
-                    voluptatibus delectus ex sapiente ipsa, nostrum excepturi pariatur in eligendi optio quae vitae
-                    earum iste obcaecati. Voluptatem, inventore.
-                </p>
 
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12 justify-content-center content">
+                <div class="text-center">
+                    <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#card2" aria-expanded="false" aria-controls="card2">
+                            Button with data-target
+                    </button>
+                    <div class="collapse" id="card2">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div><div class="col-md-4 col-sm-12 col-xs-12 justify-content-center content">
 
                 <h4 class="col text-center">Content</h4>
                 <img class="img-fluid rounded mx-auto d-block" src="./IMAGES/400x400.png">
@@ -135,14 +141,20 @@
                     <li>Something</li>
                     <li>Something</li>
                 </ul>
-                <p class="content-info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam laboriosam debitis
-                    expedita natus blanditiis magni quam illo, nesciunt earum quibusdam sequi modi, animi ea ratione aut
-                    repudiandae corporis quae?
-                    Tenetur ab veniam officia, placeat nulla eius voluptatum ratione perspiciatis fugiat dignissimos
-                    voluptatibus delectus ex sapiente ipsa, nostrum excepturi pariatur in eligendi optio quae vitae
-                    earum iste obcaecati. Voluptatem, inventore.
-                </p>
+
+                <div class="text-center">
+                    <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#card3" aria-expanded="false" aria-controls="card3">
+                            Button with data-target
+                    </button>
+                    <div class="collapse" id="card3">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
 
             </div>
         </div>

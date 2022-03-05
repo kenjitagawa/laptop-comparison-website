@@ -21,6 +21,8 @@ body
 main
 {
     margin: 2em;
+    overflow: hidden;
+   
 }
 
 /* End of main*/
@@ -115,9 +117,31 @@ footer
     margin:2rem;
     padding: 2rem;
     text-align: center;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    backdrop-filter: blur(2px) saturate(90%);
+    -webkit-backdrop-filter: blur(2px) saturate(90%);
+    background-color: rgba(0, 18, 32, 0.54);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: -1rem 0 3rem rgba(250, 179, 0, 0.55);
 }
 
+div > h4 {
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    backdrop-filter: blur(2px) saturate(90%);
+    -webkit-backdrop-filter: blur(2px) saturate(90%);
+    background-color: rgba(0, 18, 32, 0.54);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: -1rem 0 3rem rgba(236, 169, 25, 0.55);
+}
 
+@media only screen and (max-width: 768px) {
+    .content:not(:first-child) {
+        margin-top: 2em;
+    }
+}
 .content:hover
 {
     cursor: pointer;
@@ -203,10 +227,12 @@ footer
     }
   }
 
+.card {
+    background-color: transparent;
+}
 
 
-
-
+ 
 
 
 
