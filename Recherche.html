@@ -86,32 +86,66 @@
                 <div class="col-md-4 col-sm-12 col-xs-12 sidebar-main">
                     <div class="row sidebar">
                         <div class="content-section">
-                            <form action="" class="text-center sidebar_parent">
+                            <form action="https://www.w3schools.com/action_page.php" class="text-center sidebar_parent" method="post">
                                 <h3 class="sidebar-title">Sort by: </h3>
 
                                 <input class="form-control sidebar__items" type="text" placeholder="Laptop" readonly>
 
-                                <input class="form-control sidebar__items" type="text" placeholder="Model #">
+                                <input class="form-control sidebar__items" type="text" placeholder="Model #" name="model">
 
-                                <select id="inputState" class="form-control sidebar__items">
-                                <option selected>Graphics Card</option>
-                                <option>RTX 3050</option>
-                                <option>RTX 3060</option>
-                                <option>RTX 3080</option>
-                                <option>RTX 3090</option>
-                            </select>
+                                <select id="inputState" class="form-control sidebar__items" name="graphicsCard">
+                                    <option selected>Graphics Card</option>
+                                    <option>RTX 3050</option>
+                                    <option>RTX 3060</option>
+                                    <option>RTX 3080</option>
+                                    <option>RTX 3090</option>
+                                </select>
 
-                                <select id="inputState" class="form-control sidebar__items">
+                                <!-- <p>Clock speed</p>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col" >
+                                            <input type="text" class="form-control" placeholder="Min" name="min">
+                                        </div>
+                                        <div class="col" >
+                                            <input type="text" class="form-control" placeholder="Max" name="max">
+                                        </div>
+                                    </div>
+                                </div> -->
+                                    
+
+                                <div class="form-check form-check-inline sidebar__items" name="Processor">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckboxRyzen7" value="Ryzen 7 5800X" checked name="processorRy7">
+                                    <label class="form-check-label" for="inlineCheckboxRyzen7">Ryzen 7 5800X</label>
+                                </div>
+                                <div class="form-check form-check-inline sidebar__items">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckboxRyzen9" value="Ryzen 9 5950X" checked name="processorRy9">
+                                    <label class="form-check-label" for="inlineCheckboxRyzen9">Ryzen 9 5950X</label>
+                                </div>
+
+                                <div class="form-check form-check-inline sidebar__items">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckboxIntel7" value="Intel I7 12700H" checked name="processorInt7">
+                                    <label class="form-check-label" for="inlineCheckboxIntel7">Intel I7 12700H</label>
+                                </div>
+                                <div class="form-check form-check-inline sidebar__items">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckboxIntel9" value="Intel I9 12900H" checked name="processorInt9">
+                                    <label class="form-check-label" for="inlineCheckboxIntel9">Intel I9 12900H</label>
+                                </div>
+
+
+
+                                <!-- <select id="inputState" class="form-control sidebar__items">
                                 <option selected>Processor</option>
                                 <option>Ryzen 7 5800X</option>
                                 <option>Ryzen 9 5950X</option>
                                 <option>Intel I7 12700H</option>
-                                <option>Intel I9 12900H</option>
+                                <option>Intel I9 12900H</option> -->
                             </select>
 
-                                <input class="form-control sidebar__items" type="text" placeholder="Brand">
+                                <input class="form-control sidebar__items" type="text" placeholder="Brand" name="brand">
 
                                 <button type="submit" class="btn btn-light btn-outline-dark">Submit</button>
+                                <button type="reset" class="btn btn-light btn-outline-dark">Reset</button>
                                 <!-- Set to invisible once corrected -->
                             </form>
                         </div>
@@ -122,45 +156,63 @@
 
                     <div class="row justify-content-center">
                         <div class="col-md-4 col-sm-8 col-xs-8 card">
-                            <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
-
+                            <a href="detail.html">
+                                <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
+                                <p>Item 1</p>
+                            </a>
                         </div>
                         <div class="col-md-4 col-sm-10 col-xs-10 card">
-                            <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
-
+                            <a href="detail.html">
+                                <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
+                                <p>Item 1</p>
+                            </a>
                         </div>
                         <div class="col-md-4 col-sm-10 col-xs-10 card">
-                            <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
-
+                            <a href="detail.html">
+                                <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
+                                <p>Item 1</p>
+                            </a>
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-md-4 col-sm-10 col-xs-10 card">
-                            <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
-
+                            <a href="detail.html">
+                                <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
+                                <p>Item 1</p>
+                            </a>
                         </div>
                         
                         <div class="col-md-4 col-sm-10 col-xs-10 card">
-                            <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
-
+                            <a href="detail.html">
+                                <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
+                                <p>Item 1</p>
+                            </a>
                         </div>
                         <div class="col-md-4 col-sm-10 col-xs-10 card">
-                            <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
-
+                            <a href="detail.html">
+                                <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
+                                <p>Item 1</p>
+                            </a>
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-md-4 col-sm-10 col-xs-10 card">
-                            <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
-
+                            <a href="detail.html">
+                                <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
+                                <p>Item 1</p>
+                            </a>
                         </div>
                         <div class="col-md-4 col-sm-10 col-xs-10 card">
-                            <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
-
+                            <a href="detail.html">
+                                <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
+                                <p>Item 1</p>
+                            </a>
                         </div>
                         <div class="col-md-4 col-sm-10 col-xs-10 card">
-                            <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
-
+                            <a href="detail.html">
+                                <img class="card-img-top img-fuild img-card" src="./IMAGES/400x400.png" alt="Card image cap">
+                                <p>Item 1</p>
+                            </a>
                         </div>
                     </div>
                    

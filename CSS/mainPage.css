@@ -198,12 +198,6 @@ div > h4 {
 }
 
  
-    .helloWorld > h1{
-        font-size: 70px;
-    }
-
-
-
 .helloWorld {
     text-align: center;
     position: relative;
@@ -212,10 +206,15 @@ div > h4 {
     transform: translateY(5%);
 }
 
+@media only screen and (max-width: 768px) {
+    .helloWorld > h1{
+        font-size: 70px;
+    }
+}
+
 .helloWorld > span{
     font-size: 2em;
 }
-
 
 
 .helloWorld > *{
@@ -243,7 +242,10 @@ div > h4 {
     background-color: transparent;
 }
 
-
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: white;
+}
 
 
 
