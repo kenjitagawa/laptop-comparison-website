@@ -141,6 +141,10 @@ div > h4 {
     .content:not(:first-child) {
         margin-top: 2em;
     }
+    
+    .helloWorld > h1{
+        font-size: 70px;
+    }
 }
 .content:hover
 {
