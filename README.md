@@ -1,5 +1,5 @@
 [![wakatime](https://wakatime.com/badge/github/kenjitagawa/laptop-comparison-website.svg)](https://wakatime.com/badge/github/kenjitagawa/laptop-comparison-website)
-[![Tests](https://img.shields.io/github/checks-status/kenjitagawa/laptop-comparison-website/main)]
+![Tests](https://img.shields.io/github/checks-status/kenjitagawa/laptop-comparison-website/main)
 
 # Laptop comparison app
 This app is a front-end development for a school project. For the moment, it has only the implementation of the front-end, however, the backend is coming. 
