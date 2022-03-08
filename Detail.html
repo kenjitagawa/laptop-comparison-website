@@ -36,7 +36,7 @@
         Header
     -->
     <nav class="navbar navbar-expand-md navbar-light red">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
             <span class="logo nav-items helloWorld">KT</span>
             <span class="material-icons-outlined material-icons code logo nav-items">
                 code
@@ -62,14 +62,14 @@
                     </a>
                 </li>
                 <li class="nav-item nav-list-items">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="./Favorites.html">
                         <i class="nav-icons fa-solid fa-star nav-items"></i>
                         <span class="nav-items nav-items-text">Favorites</span>
 
                     </a>
                 </li>
                 <li class="nav-item nav-list-items">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="./404.html">
                         <i class="fa-solid fa-circle-user nav-items"></i>
                         <span class="nav-items nav-items-text">Log-In</span>
 
@@ -89,16 +89,26 @@
         <div class="container container-style">
             <div aria-label="breadcrumb">
                 <ol class="breadcrumb main-detail">
-                    <li class="breadcrumb-item"><a href="#">Brand</a></li>
-                    <li class="breadcrumb-item"><a href="#">Model</a></li>
+                    <li class="breadcrumb-item"><a href="./Recherche.html">Asus</a></li>
+                    <li class="breadcrumb-item"><a href="./Recherche.html">Models</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Detail</li>
                 </ol>
             </div>
 
             <div class="row justify-content-center ">
                 <div class="col-md-3 main-item-container">
-                    <img src="./IMAGES/400x400.png" alt="Image enfant" class="img-fluid img">
-                    <h3 class="itemFeature">Zephyrus G14</h3>
+                    <img src="./IMAGES/computerImages/Homer_Simpson.webp" alt="Image enfant" class="img-fluid img row" id="imgItem">
+                    <h3 class="itemFeature row" id="computerName">Zephyrus G14</h3>
+                    <form class="form-inline justify-content-center" action="https://www.w3schools.com/action_page.php">
+
+                        <div class="form-group invisible" style="display: none;">
+                            <label for="name"></label>
+                            <input type="text" class="form-control-plaintext " id="computerName" name="name" value="G14">
+                          </div>
+
+                        <button type="submit" class="btn btn-primary mb-2 btn-color"><i class="nav-icons fa-solid fa-star nav-items"></i> Add to Favorites</button>
+                      </form>
+                        
                 </div>
                 <div class="col-md-6 informations">
                     <div class="card" style="width: 18rem;">
@@ -109,6 +119,7 @@
                             <li class="list-group-item"><span class="itemFeature">Name:</span> Zephyrus G14</li>
                             <li class="list-group-item"><span class="itemFeature">CPU:</span> Ryzen 9 5900HS</li>
                             <li class="list-group-item"><span class="itemFeature">GPU:</span> RTX 3060</li>
+                            <li class="list-group-item" id="computerPrice"><span class="itemFeature">Price:</span> $2150</li>
                         </ul>
                     </div>
                     <div class="card" style="width: 18rem;">
@@ -202,6 +213,8 @@
             </div>
         </form>
     </footer>
+
+    <script src="/JS/favorites.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
