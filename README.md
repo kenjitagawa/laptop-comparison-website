@@ -19,6 +19,8 @@ The front-end has been built with HTML, CSS, JavaScript and the backend will be 
 
 * Start routing
 * Make authentication page with Firebase
+* Create Firebase DataBase
+* Add titles to each page
 ---
 ## Page routing
 
