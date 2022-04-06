@@ -1,0 +1,147 @@
+/* Main config */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+:root
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mukta', sans-serif;
+}
+
+body
+{
+    color: white;
+    background-color: #001220;
+    overflow-x: hidden; 
+    background: rgb(15,15,16);
+    background: linear-gradient(180deg, rgba(0, 18, 32, 1) 25%, rgba(162,2,2,1) 45%, rgba(0, 18, 32, 1) 74%);
+}
+
+main
+{
+    height: 150vh;
+    margin: 2em;
+    overflow: hidden;
+}
+
+/* End of main*/
+
+
+/* Scroll bar config */
+body::-webkit-scrollbar
+{
+    width:.5em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(218, 7, 7, 0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #a20202;
+    outline: 1px solid slategrey;
+    border-radius: 15px;
+  }
+
+/* End of bar config */
+
+/* Configurations de la barre nav */
+.nav
+{
+    background-color: transparent;
+}
+
+.nav-items {
+    color: white;
+    font-size: 1.2em;
+}
+
+.nav-items-text {
+    font-weight: 200;
+}
+
+.nav-list-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.code {
+    position: relative;
+    top: .4rem;
+}
+
+.logo{
+    font-size: 2.5rem;
+    animation-name: spin-logo;
+    animation-duration: 50000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes spin-logo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* End of Nav config */
+
+
+/* SVGs on the nav and the footer */
+
+
+.layer-bottom {
+    background-image: url("../IMAGES/main-bottom-wave.svg");
+}
+
+.layer-top {
+    background-image: url("../IMAGES/layered-waves.svg");
+    z-index: -1;
+}
+
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    z-index: -1;
+
+  }
+  
+.spacer-top{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.flip
+{
+    transform: rotate(180deg);
+}
+
+.red {
+    background-color: #a20202;
+  }
+
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/* footer style */
+
+footer
+{
+    background-color: #abb8c3;
+    height: 150px;
+}

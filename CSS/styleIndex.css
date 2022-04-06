@@ -1,0 +1,144 @@
+/* Overwrites */
+
+main {
+    height: fit-content;
+}
+
+/* End of overwrites */
+
+
+.mailing-list {
+    display: block;
+    text-align: center;
+}
+ 
+
+.center {
+    display: flex;
+    flex-direction: column;
+} 
+
+
+
+/*
+    Configuration of the title of the boxes
+*/
+
+ .title-main
+{
+    margin:2rem;
+    padding: 2rem;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    backdrop-filter: blur(2px) saturate(90%);
+    -webkit-backdrop-filter: blur(2px) saturate(90%);
+    background-color: rgba(0, 18, 32, 0.54);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: -1rem 0 3rem rgba(250, 179, 0, 0.55);
+}
+
+
+
+div > h4 {
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    backdrop-filter: blur(2px) saturate(90%);
+    -webkit-backdrop-filter: blur(2px) saturate(90%);
+    background-color: rgba(0, 18, 32, 0.54);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: -1rem 0 3rem rgba(236, 169, 25, 0.55);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .content:not(:first-child) {
+        margin-top: 2em;
+    }
+    
+    .helloWorld > h1{
+        font-size: 70px;
+    }
+}
+
+.content{
+    border: 2px solid transparent ;
+    transition-duration: 1s;
+    transition-property: border;
+}
+
+.content:hover
+{
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.card {
+    background-color: transparent;
+}
+
+/* End of cards config */
+
+
+/* Animation "Hello World" */
+
+.helloWorld
+{
+    height: 100vh;
+}
+
+ 
+@media only screen and (min-width: 992px) {
+    .helloWorld > h1{
+        font-size: 100px;
+    }
+}
+
+ 
+.helloWorld {
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    font-family: Hack, sans-serif;
+    transform: translateY(5%);
+}
+
+@media only screen and (max-width: 768px) {
+    .helloWorld > h1{
+        font-size: 70px;
+    }
+}
+
+.helloWorld > span{
+    font-size: 2em;
+}
+
+
+.helloWorld > *{
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #000, #a20202, #000);
+    background-clip: text;
+    letter-spacing: 10px;
+    -webkit-text-fill-color: transparent;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    animation: shine 5s linear infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+
+
+
+
+
+
